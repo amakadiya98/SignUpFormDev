@@ -1,0 +1,164 @@
+.navbar{
+    background-color: #FFF !important;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+.navbar .navbar-collapse .navbar-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar  .desktop.navbar-brand{
+    flex: 1;
+}
+.navbar .navbar-nav .center{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex: 2;
+    justify-content: center;
+}
+
+.navbar  .navbar-nav .right{
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar .navbar-collapse .navbar-nav .right .Btn{
+    border-radius: 14px;
+    border: 2px solid #F1C510;
+    background-color: #F1C510;
+    padding: 7px 20px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-link{
+    color: #110229;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.mobileRightPart{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.country-dropdown{
+    font-weight: 600;
+}
+.signup-link{
+    font-weight: 800;
+}
+
+
+/* ----- responsive design start ----- */
+
+@media (max-width: 1024px) {
+    .navbar{
+        padding: 20px 40px;
+    }
+    .nav-link{
+        font-size: 14px;
+    }
+    .navbar .navbar-collapse .navbar-nav .right{
+        gap: 15px;
+    }
+    .navbar .navbar-collapse .navbar-nav .center{
+        gap: 8px;
+        padding-right: 30px;
+        padding-right: 30px;
+    }
+    .navbar .desktop.navbar-brand,.navbar .navbar-collapse .navbar-nav .right, .navbar .navbar-collapse .navbar-nav .center{
+        flex: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .desktop{
+        display: none;
+    }
+    
+    .navbar .navbar-collapse .navbar-nav .right,
+    .navbar .navbar-collapse .navbar-nav .center{
+        flex-direction: column;
+    }
+    .navbar{
+        position: relative;
+    }
+    .navbar-collapse {
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        width: 350px;
+        padding: 20px;
+        height: 100vh;
+        z-index: 9;
+        transform: translateX(350px);
+        transition:  transform 1s;
+    }
+    .navbar-collapse.show{
+        transform: translateX(0px);
+    }
+    .navbar-toggler{
+        border: 0;
+    }
+    .navbar-toggler:focus{
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+    }
+    .navbar-toggler.collapsed .navbar-toggler-icon{
+        background-image: url('../images/bar.svg');
+    }
+    .navbar-toggler .navbar-toggler-icon{
+        background-image: url('../images/close.svg');
+        opacity: 0.7;
+    }
+    .navbar-collapse .nav-link {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .collapsing {
+        height: 100vh;
+        overflow: hidden;
+        transition: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .mobileRightPart,
+    .mobile{
+        display: none;
+    }
+    
+    .desktop{
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar{
+        padding: 12px 20px;
+    }
+}

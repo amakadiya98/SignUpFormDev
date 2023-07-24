@@ -1,0 +1,327 @@
+.body-part{
+    background-image: url('../images/background-body.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 100px);
+    width: 100%;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-part .box{
+    background-color: #fff;
+    width: 34%;
+    /* max-width: 700px; */
+    padding: 20px 96px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.body-part .box .head-text{
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 183.2%; /* 54.96px */
+    margin: 0;
+}
+
+.body-part .box .text{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    margin: 0;
+}
+
+.body-part .box .Form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.body-part .box .Form .field{
+    display: flex;
+    flex-direction: column;
+}
+
+.body-part .box .Form .field label{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 183.2%; /* 29.312px */
+}
+
+.body-part .box .Form .field input{
+    border-radius: 22.5px;
+    border: 1px solid #E9E9E9;
+    background-color: #F4F4F4;
+    padding: 11px 24px;
+}
+
+.body-part .box .Form .terms{
+    display: flex;
+    gap: 14px;
+}
+
+.body-part .box .Form .terms .termsText{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 183.2%; /* 25.648px */
+    position: relative;
+    cursor: pointer;
+    /* margin-left: 30px; */
+}
+
+/* .body-part .box .Form .terms .termsText::before{
+    content: "";
+    position: absolute;
+    background-image: url('../images/unchecked.svg');
+    width: 18px;
+    height: 18px;
+    left: -30px;
+} */
+
+.body-part .box .Form .terms .termsText a{
+    color: #66B855;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.body-part .box .Form .terms .check{
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.body-part .box .Form .terms .check:checked{
+    background-image: url('../images/checked.svg');
+    width: 18px;
+    height: 18px;
+}
+
+.body-part .box .Form .btnPart{
+    width: 100%;
+}
+
+.body-part .box .Form .btnPart .Btn{
+    width: 100%;
+    border-radius: 30px;
+    background: #66B855;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.body-part .box .Form .devider .text{
+    color: #898989;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 183.2%; /* 25.648px */
+    position: relative;
+}
+.body-part .box .Form .devider .text::before, .body-part .box .Form .devider .text::after{
+    content: "";
+    height: 1px;
+    background-color: #898989;
+    position: absolute;
+    width: 36%;
+    top: 14px;
+}
+.body-part .box .Form .devider .text::before{
+    left: 0;
+}
+
+.body-part .box .Form .devider .text::after{
+    right: 0;
+}
+
+.body-part .box .Form .signUpOptions{
+    display: flex;
+    gap: 33px;
+    padding-bottom: 5px;
+}
+
+.body-part .box .Form .signUpOptions .facebook{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #1877F2;
+    width: 100%;
+    border: none;
+}
+
+.body-part .box .Form .signUpOptions .google{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    width: 100%;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.17);
+    border: none;
+}
+
+.body-part .box .Form .signUpOptions .apple{
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 100%;
+    border: none;
+}
+
+.body-part .box .Form .bottomPart{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.body-part .box .Form .bottomPart .text{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 183.2%; /* 29.312px */
+}
+
+.body-part .box .Form .bottomPart .link{
+    color: #66B855;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 183.2%; /* 29.312px */
+    text-decoration: none;
+}
+/* common checkbox */
+
+
+.terms input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .terms label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .terms label:before {
+    content:'';
+    -webkit-appearance: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 14px;
+    background-image: url('../images/unchecked.svg');
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+  
+  .terms input:checked + label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    background-image: url('../images/checked.svg');
+    height: 20px;
+    width: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+/* ----- Responsive design start ----- */
+@media screen and (max-width: 1680px) {
+    .body-part{
+        height: 100%;
+        padding: 20px 0;
+    }
+    .body-part .box{
+        width: 45%;
+    }
+}
+@media (max-width: 1440px) {
+    .body-part .box .Form .devider .text::before,
+    .body-part .box .Form .devider .text::after{
+        width: 36%;
+    }
+    
+}
+@media (max-width: 1280px) {
+    .body-part .box{
+        padding: 31px 60px;
+    }
+    .body-part .box .Form .devider .text::before,
+    .body-part .box .Form .devider .text::after{
+        width: 33%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .body-part .box{
+        width: 60%;
+    }
+    .body-part {
+        height: calc(100vh - 100px);
+    }
+}
+
+@media (max-width: 768px) {
+    .body-part .box{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .body-part{
+        height: auto;
+        padding: 50px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .body-part .box{
+        width: 94%;
+        padding: 30px;
+    }
+    .body-part .box .head-text{
+        font-size: 24px;
+    }
+    .body-part .box .text{
+        font-size: 14px;
+    }
+    .body-part .box .Form .signUpOptions{
+        gap: 26px;
+    }
+}
+
+@media (max-width: 375px) {
+    .body-part .box .Form .devider .text::before,
+    .body-part .box .Form .devider .text::after{
+        width: 30%;
+    }
+}
+
+@media (max-width: 320px) {
+    .body-part .box .Form .devider .text::before,
+    .body-part .box .Form .devider .text::after{
+        width: 28%;
+    }
+    .body-part .box{
+        padding: 25px;
+    }
+}
