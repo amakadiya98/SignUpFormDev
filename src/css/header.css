@@ -72,6 +72,21 @@
 
 /* ----- responsive design start ----- */
 
+@media (max-width: 1440px) {
+    .navbar .navbar-nav .right{
+        gap: 12px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0;
+    }
+    .signup-link{
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 1024px) {
     .navbar{
         padding: 20px 40px;
