@@ -1,0 +1,194 @@
+@font-face {
+    font-family: "Lato";
+    font-weight: 100;
+    src: url("../Font/Lato-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 300;
+    src: url("../Font/Lato-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 400;
+    src: url("../Font/Lato-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 700;
+    src: url("../Font/Lato-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-weight: 900;
+    src: url("../Font/Lato-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 700;
+    src: url("../Font/Raleway-Bold.ttf") format("truetype");
+}
+
+.Footer {
+    background-color: #1C1C1C;
+    padding: 50px 0;
+}
+
+.Footer .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer .content .logoPart {
+    width: 20%;
+}
+
+.Footer .content .logoPart .text {
+    color: #F8F8F8;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+    opacity: 0.8;
+    margin-top: 16px;
+}
+
+.Footer .content .listPart {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Footer .content .listTitle {
+    color: #FFF;
+    font-family: Lato;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 150% */
+    opacity: 0.5;
+    margin: 0;
+}
+
+.Footer .content .listPart .list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.Footer .content .listPart .list .listItem a {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    /* 137.5% */
+    text-decoration: none;
+}
+
+.Footer .content .listPart .list .listItem a:hover {
+    color: #F1C510;
+}
+
+.Footer .content .socialMediaPart .socialMedia {
+    display: flex;
+    gap: 16px;
+    margin-top: 26px;
+}
+
+.Footer .content .socialMediaPart .socialMedia .facebook,
+.Footer .content .socialMediaPart .socialMedia .instagram,
+.Footer .content .socialMediaPart .socialMedia .linckedIn {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.Footer .content .socialMediaPart .socialMedia .facebook:hover,
+.Footer .content .socialMediaPart .socialMedia .instagram:hover,
+.Footer .content .socialMediaPart .socialMedia .linckedIn:hover {
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
+
+.Footer .content .socialMediaPart .socialMedia .facebook {
+    background-image: url("../images/homePage/Facebook.svg");
+}
+
+.Footer .content .socialMediaPart .socialMedia .instagram {
+    background-image: url("../images/homePage/Instagram.svg");
+}
+
+.Footer .content .socialMediaPart .socialMedia .linckedIn {
+    background-image: url("../images/homePage/linckedIn.svg");
+}
+
+@media (max-width: 1280px) {
+    .Footer .content .logoPart {
+        width: 24%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .Footer .content .logoPart {
+        width: 28%;
+    }
+}
+
+@media (max-width: 991px) {
+    .Footer .content {
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    .Footer .content{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Footer .content{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .Footer .content .logoPart{
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .Footer .content {
+        gap: 24px;
+    }
+
+    .Footer .content .listPart .list{
+        gap: 10px;
+    }
+
+    .Footer .content .listPart{
+        gap: 16px;
+    }
+
+    .Footer .content .socialMediaPart .socialMedia{
+        margin-top: 16px;
+    }
+}

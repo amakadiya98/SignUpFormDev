@@ -44,7 +44,7 @@ function Header() {
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
               </NavDropdown>
             </div>
-            <Nav.Link href="#" className='signup-link'>Sign Up</Nav.Link>
+            <Nav.Link href="/signup" className='signup-link'>Sign Up</Nav.Link>
             <Button className='Btn'><img src={Vector} alt="" /> Login</Button>
           </div>
         </Nav>

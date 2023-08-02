@@ -1,0 +1,603 @@
+@font-face {
+    font-family: "Raleway";
+    font-weight: 100;
+    src: url("../Font/Raleway-Thin.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 200;
+    src: url("../Font/Raleway-ExtraLight.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 300;
+    src: url("../Font/Raleway-Light.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 400;
+    src: url("../Font/Raleway-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 500;
+    src: url("../Font/Raleway-Medium.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 600;
+    src: url("../Font/Raleway-SemiBold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 700;
+    src: url("../Font/Raleway-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 800;
+    src: url("../Font/Raleway-ExtraBold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Raleway";
+    font-weight: 900;
+    src: url("../Font/Raleway-Black.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 100;
+    src: url("../Font/Roboto-Thin.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 300;
+    src: url("../Font/Roboto-Light.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 400;
+    src: url("../Font/Roboto-Regular.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    src: url("../Font/Roboto-Medium.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    src: url("../Font/Roboto-Bold.ttf") format("TrueType");
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 900;
+    src: url("../Font/Roboto-Black.ttf") format("TrueType");
+}
+
+/* ----- Common Css ----- */
+
+
+
+.BannerSection {
+    background-image: url("../images/homePage/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.BannerSection .overlayer {
+    background: linear-gradient(145deg, rgba(2, 2, 2, 0.70) 52.62%, rgba(55, 54, 54, 0.39) 100%);
+    padding: 114px 0 172px;
+}
+
+.BannerSection .overlayer .title {
+    color: #FFF;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 66px;
+    /* 132% */
+    margin-bottom: 32px;
+}
+
+.BannerSection .overlayer .text {
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 141.667% */
+    width: 66%;
+    margin: 0 auto 28px;
+}
+
+.BannerSection .overlayer .buttonPart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.BannerSection .overlayer .buttonPart .btn {
+    border-radius: 30px;
+    padding: 15px 32px;
+}
+
+.BannerSection .overlayer .buttonPart .btn.yellow {
+    border: 2px solid #F1C510;
+    background: #F1C510;
+    color: #110229;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.BannerSection .overlayer .buttonPart .btn.yellow:hover {
+    border: 2px solid #F1C510;
+    background: rgba(0, 0, 0, 0.50);
+    color: #F1C510;
+}
+
+.BannerSection .overlayer .buttonPart .btn.black {
+    border: 2px solid #F1C510;
+    background: rgba(0, 0, 0, 0.50);
+    color: #F1C510;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.BannerSection .overlayer .buttonPart .btn.black:hover {
+    border: 2px solid #F1C510;
+    background: #F1C510;
+    color: #110229;
+}
+
+.AboutUs .content {
+    padding: 130px 0;
+    display: flex;
+    gap: 38px;
+}
+
+.AboutUs .content .mobileHeader {
+    display: none;
+}
+
+.AboutUs .content .mobileHeader .headerText {
+    color: #333;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 45px */
+    text-align: center;
+}
+
+.AboutUs .content .imagePart {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.AboutUs .content .imagePart .ImageOne {
+    margin-top: -70px;
+}
+
+.AboutUs .content .textPart .headerText {
+    color: #333;
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    /* 54px */
+    margin-bottom: 12px;
+}
+
+.AboutUs .content .textPart .text {
+    color: #333;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 187.5% */
+    margin: 0;
+}
+
+.AboutUs .content .textPart .text.space {
+    margin-bottom: 36px;
+}
+
+.AboutUs .content .textPart .btn {
+    color: #F1C510;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2.5px solid #F1C510;
+    margin-top: 46px;
+}
+
+.AboutUs .content .textPart .btn:hover {
+    border: 2px solid #F1C510;
+    background: #F1C510;
+    color: #110229;
+    box-shadow: 2px 2px 20px #000;
+}
+
+.MoreSection {
+    padding-bottom: 112px;
+}
+
+.MoreSection .content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: #F1C510;
+    padding: 15px 20px;
+    gap: 50px;
+}
+
+.MoreSection .content .imagePart {
+    display: flex;
+    gap: 20px;
+    flex: 1;
+}
+
+.MoreSection .content .imagePart .image img {
+    width: 100%;
+}
+
+.MoreSection .content .imagePart .image:last-child {
+    margin-top: -60px;
+}
+
+.MoreSection .content .textPart {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    margin-left: 50px;
+}
+
+.MoreSection .content .textPart .headerText {
+    color: #110229;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 62px;
+    /* 147.619% */
+    letter-spacing: 0.8px;
+    width: 68%;
+    margin: 0;
+}
+
+.MoreSection .content .textPart .text {
+    color: #110229;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+    /* 168.75% */
+    letter-spacing: 1.15px;
+    margin: 0;
+}
+
+.MoreSection .content .textPart .btn {
+    color: #110229;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 15px;
+    border-radius: 30px;
+    border: 2px solid #110229;
+    background: rgba(255, 255, 255, 0.00);
+}
+
+.MoreSection .content .textPart .btn:hover {
+    border: 2px solid #000;
+    background: rgba(0, 0, 0, 0.90);
+    color: #F1C510;
+    box-shadow: 2px 2px 20px #000;
+}
+
+/* ----- Responsive start here ----- */
+
+@media (max-width: 1399px) {
+    .BannerSection .overlayer .text {
+        width: 77%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .BannerSection .overlayer .text {
+        width: 76%;
+    }
+
+    .MoreSection .content .textPart .headerText {
+        line-height: 50px;
+    }
+
+    .MoreSection .content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .BannerSection .overlayer .text {
+        width: 92%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .AboutUs .content .textPart {
+        flex: 1;
+    }
+
+    .AboutUs .content {
+        gap: 15px;
+    }
+
+    .MoreSection .content .imagePart .image img,
+    .MoreSection .content .imagePart .image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .MoreSection .content .textPart {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 991px) {
+    .BannerSection .overlayer .title {
+        font-size: 36px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .BannerSection .overlayer .text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+
+    .BannerSection .overlayer .buttonPart .btn {
+        padding: 15px 20px;
+    }
+
+    .BannerSection .overlayer .buttonPart .btn.yellow,
+    .BannerSection .overlayer .buttonPart .btn.black {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .AboutUs .content {
+        flex-direction: column;
+        padding: 100px 0;
+    }
+
+    .AboutUs .content .imagePart {
+        justify-content: center;
+    }
+
+    .AboutUs .content .textPart {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AboutUs .content .textPart .headerText {
+        display: none;
+    }
+
+    .AboutUs .content .mobileHeader {
+        display: block;
+        margin-bottom: 26px;
+    }
+
+    .AboutUs .content .textPart .text {
+        text-align: center;
+    }
+
+    .MoreSection .content {
+        flex-direction: column;
+    }
+
+    .MoreSection .content .textPart {
+        align-items: center;
+        text-align: center;
+    }
+
+    .MoreSection .content .textPart .btn {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .AboutUs .content .textPart .headerText {
+        display: block;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .MoreSection .content .imagePart {
+        gap: 15px;
+    }
+
+    .MoreSection .content {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .BannerSection .overlayer {
+        padding: 100px 0 150px;
+    }
+
+    .BannerSection .overlayer .title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .BannerSection .overlayer .text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .BannerSection .overlayer .buttonPart {
+        flex-direction: column;
+    }
+
+    .AboutUs .content .textPart .text.space {
+        margin-bottom: 26px;
+    }
+
+    .AboutUs .content .textPart .btn {
+        margin-top: 30px;
+    }
+
+    .MoreSection .content .textPart .headerText {
+        font-size: 39px;
+        line-height: 42px;
+    }
+
+    .MoreSection .content .textPart .text {
+        line-height: 20px;
+    }
+
+    .MoreSection .content .textPart {
+        margin: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .AboutUs .content .imagePart img {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .BannerSection .overlayer {
+        padding: 100px 0 100px;
+    }
+
+    .BannerSection .overlayer .title {
+        font-size: 34px;
+        line-height: 38px;
+        margin-bottom: 16px;
+    }
+
+    .BannerSection .overlayer .buttonPart {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .AboutUs .content .textPart .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .AboutUs .content .textPart .text.space {
+        margin-bottom: 20px;
+    }
+
+    .AboutUs .content .textPart .btn {
+        margin-top: 26px;
+    }
+
+    .MoreSection .content .textPart .headerText {
+        font-size: 30px;
+        line-height: 34px;
+    }
+}
+
+@media (max-width: 400px) {
+    .BannerSection .overlayer .title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .BannerSection .overlayer .text {
+        font-size: 16px;
+    }
+
+    .BannerSection .overlayer .buttonPart {
+        width: 88%;
+    }
+}
+
+@media (max-width: 375px) {
+    .AboutUs .content .imagePart {
+        gap: 8px;
+    }
+
+    .MoreSection .content .textPart .text {
+        font-size: 14px;
+
+    }
+}
+
+@media (max-width: 320px) {
+    .BannerSection .overlayer .title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .BannerSection .overlayer .text {
+        font-size: 14px;
+    }
+
+    .BannerSection .overlayer .buttonPart {
+        width: 100%;
+    }
+
+    .BannerSection .overlayer .buttonPart .btn.yellow,
+    .BannerSection .overlayer .buttonPart .btn.black {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
